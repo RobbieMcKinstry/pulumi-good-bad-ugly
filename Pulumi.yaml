@@ -1,0 +1,8 @@
+name: do-example
+runtime: go
+description: A Pulumi stack for deploying a webserver with a load balancer and SSL cert on DigitalOcean.
+
+configuration: {}
+variables:     {}
+resources:     {}
+outputs:       {}

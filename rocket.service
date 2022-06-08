@@ -1,0 +1,11 @@
+[Unit]
+Description = "Rocket Webapp Docker Launcher"
+
+[Service]
+KillSignal=INT
+ExecStart=/usr/bin/docker run -p 80:8000 thesnowmancometh/rocket-hello-world
+Restart=always
+ExecStopPost=sleep 5
+
+[Install]
+WantedBy=multi-user.target
